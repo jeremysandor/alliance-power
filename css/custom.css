@@ -1,0 +1,95 @@
+body {
+  line-height: 1.6;
+}
+
+p {
+  margin-bottom: 1.4em;
+}
+
+.navbar {
+    background-color: #fff;
+    margin-top: 40px;
+    border: none;
+}
+
+
+/* Menu Effect 1: Brackets */
+
+
+.navbar .nav > li > a::before,
+.navbar .nav > li > a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.navbar .nav > li > a::before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.navbar .nav > li > a::after {
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.navbar .nav > li > a:hover::before,
+.navbar .nav > li > a:hover::after,
+.navbar .nav > li > a:focus::before,
+.navbar .nav > li > a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
+
+h1 {
+	font-size: 2.6em;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+
+h2 {
+  font-size: 2.3em;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 5%;
+}
+
+.staff {
+	margin-top: 3em;
+}
+
+.intro {
+	margin-top: 25px;
+}
+
+.footer {
+	margin-top: 75px;
+	padding-top: 15px;
+	border-top: 1px solid gray;
+	text-align: center;
+	font-size: .85em;
+	color: gray;
+}
+
+.center {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
